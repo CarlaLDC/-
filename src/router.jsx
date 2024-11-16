@@ -10,7 +10,6 @@ export default function Navegacao() {
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<Symbol />} />
-
             </Routes>
         </BrowserRouter >
 
