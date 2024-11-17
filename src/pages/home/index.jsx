@@ -9,7 +9,7 @@ export default function Symbol() {
     }
   };
   return (
-    <div className="OnePage">
+    <div className="OnePage"> 
       <div className='head' >
         <Link className='logo_name'>
           <img src="/assets/image/logo.png" alt="" />
@@ -46,7 +46,7 @@ export default function Symbol() {
 
       <div className="faixa_servicos" id='servicos'>
         <h1>Serviços</h1>
-        <h3>Oferecemos soluções digitais criativas e eficientes para ajudar o seu negócio a <br /> crescer online.</h3>
+        <h3>Oferecemos soluções digitais criativas e eficientes para ajudar o seu negócio a  crescer online.</h3>
         <div className="cards">
           <div className="one-card">
             <img src="/assets/image/icon-code.png" alt="" />

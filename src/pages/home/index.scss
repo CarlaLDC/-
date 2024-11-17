@@ -7,6 +7,7 @@ body {
     .head {
         display: flex;
         justify-content: space-between;
+        width: 100%;
 
         .logo_name {
             display: flex;
@@ -46,8 +47,9 @@ body {
                 font-size: 1em;
                 outline: none;
 
-              }
-            .link:hover{
+            }
+
+            .link:hover {
                 font-size: 1.02em;
                 color: red;
             }
@@ -96,8 +98,9 @@ body {
                 font-size: 0.8em;
                 transition: 0.3s;
             }
-            .button-banner:hover{
-                box-shadow: 0px 0px 15px #fff ;
+
+            .button-banner:hover {
+                box-shadow: 0px 0px 15px #fff;
                 font-size: 0.81em;
             }
 
@@ -201,15 +204,16 @@ body {
 
 
             }
+
             .one-card:hover,
             .two-card:hover,
             .three-card:hover {
-                box-shadow: 0px 0px 15px #020043 ;
+                box-shadow: 0px 0px 15px #020043;
             }
         }
     }
 
-    .faixa_tecnologias{
+    .faixa_tecnologias {
         display: flex;
         flex-direction: column;
         margin-top: 50px;
@@ -222,21 +226,23 @@ body {
             color: #020043;
             justify-content: center;
         }
-        .icons{
+
+        .icons {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             gap: 50px;
-            
+
             .firsts-icons,
-            .seconds-icons{
+            .seconds-icons {
                 justify-content: center;
                 display: flex;
                 gap: 150px;
                 margin-left: -2%;
                 margin-top: 50px;
-                img{
+
+                img {
                     width: auto;
                     height: 6em;
                 }
@@ -244,17 +250,104 @@ body {
         }
     }
 
-    .baseboard{
+    .baseboard {
         gap: 15px;
         display: flex;
         margin-top: 60px;
         background-color: #020043;
-        align-items: center;        
+        align-items: center;
         justify-content: center;
         font-family: "Inter", serif;
         font-size: 0.8em;
         color: #fff;
         height: 30px;
         width: 100%;
+    }
+
+    @media(max-width: 768px) {
+        .head {
+            flex-direction: column;
+
+            .options {
+                flex-direction: column;
+                margin-top: 20px;
+
+                .link {
+                    margin-top: -25px;
+                }
+            }
+        }
+
+        .faixa_home {
+            img {
+                width: 100%;
+            }
+
+            .text {
+                text-align: center;
+                margin-right: 10%;
+                margin-top: 150px;
+            }
+
+        }
+
+        .faixa_sobre-nos {
+            h1 {
+                text-align: center;
+            }
+
+            .image-text {
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    justify-content: center;
+                }
+
+                p {
+                    margin-top: -100px;
+                    text-align: center;
+                    width: 300px;
+                }
+            }
+        }
+
+        .faixa_servicos{
+            align-items: center;
+            
+            h3{
+                justify-content: center;
+                text-align: center;
+                width: 350px;
+            }
+            .cards{
+                flex-direction: column;
+            }
+        }
+
+        .faixa_tecnologias{
+            flex-direction: column;
+            justify-content: center;
+
+            .icons{                
+                .firsts-icons,
+                .seconds-icons {
+                    flex-direction: column;
+                    
+                    img{
+                        width: 8em;
+                        height: 7em;
+                    }
+                }
+            }    
+        }
+        .baseboard{
+            align-items: center;
+            font-size: 0.6em;
+            img{
+                width: auto;
+                height: 1.3em;
+            }
+        }
     }
 }
